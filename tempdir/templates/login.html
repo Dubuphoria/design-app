@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Page</title>
+    </head>
+
+    <body style="background-color: lightblue;">
+        <div>
+            <form action="" method="post">
+                <label>Username</label><br>
+                <input name="username" type="text" placeholder="Enter your username"><br><br>
+                <label>Password</label><br>
+                <input name="password" type="password" placeholder="Enter your password"><br><br>
+                <input type="submit" value="Login"><br><br>
+            </form>
+        </div>
+
+        <div>
+            <form action="/new">
+                <label>Register?</label>
+                <input value="Register" type="submit">
+            </form>
+        </div>
+
+        <script language="javascript">
+            function check(form) { /*function to check userid & password*/
+                /*the following code checkes whether the entered userid and password are matching*/
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('profile.html')/*opens the target page while Id & password matches*/
+                }
+                else {
+                    alert("Error Password or Username")/*displays error message*/
+                }
+            }
+        </script>
+
+
+    </body>
+</html>
